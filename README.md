@@ -4,26 +4,25 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/to/state-management-sample).
+flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter devices
 
-## Assets
+flutter emulators --launch {emulator_id}
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+flutter build apk --release
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/to/resolution-aware-images).
+install dependencies in pubspe.yaml
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^0.13.4
+```
 
-## Localization
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
-
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter apps](https://flutter.dev/to/internationalization).
+flutter run 할때
+devices가 잘 안잡힌다면
+adb환경변수를 잘 잡아줄것 : platfoms-tool
